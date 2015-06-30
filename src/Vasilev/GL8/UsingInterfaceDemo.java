@@ -11,11 +11,15 @@ double power(double x,int n);
 // Класс реализует интерфейс:
 class MyMath implements Mathematica{
 // Описание метода интерфейса (факториал):
+@Override
+@SuppressWarnings("empty-statement")
 public int factorial(int n){
 int s=1,i;
 for(i=n;i>0;s*=i--);
 return s;}
 // Описание метода интерфейса (возведение в степень):
+@Override
+@SuppressWarnings("empty-statement")
 public double power(double x,int n){
 double s=1;
 for(int i=1;i<=n;s*=x,i++);

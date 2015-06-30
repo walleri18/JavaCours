@@ -27,6 +27,7 @@ class B extends A{
 // Еще одно поле:
 int second;
 // Переопределение варианта метода с одним аргументом:
+@Override
 void set(int n){
 first=n;
 second=n;
@@ -38,6 +39,7 @@ second=n;
 // Вызов варианта метода из суперкласса:
 super.set(m);}
 // Переопределение метода для отображения полей:
+@Override
 void show(){
 System.out.println("Поля "+first+" и "+second+".");}
 }

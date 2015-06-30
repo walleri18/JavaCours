@@ -1,13 +1,13 @@
 package Vasilev.GL8;
 
 // Суперкласс с закрытыми членами:
-class Base{
+class Base3{
 // Закрытое текстовое поле:
 private String name;
 // Закрытое числовое поле:
 private int number;
 // Конструктор суперкласса:
-Base(String name,int number){
+Base3(String name,int number){
 this.name=name;
 this.number=number;
 }
@@ -27,7 +27,7 @@ this.name=name;
 this.number=number;}
 }
 // Подкласс:
-class SubBase extends Base{
+class SubBase extends Base3{
 // Конструктор подкласса:
 SubBase(String str,int num){
 // Вызов конструктора суперкласса:

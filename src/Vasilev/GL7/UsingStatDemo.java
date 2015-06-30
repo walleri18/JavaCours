@@ -1,13 +1,13 @@
 package Vasilev.GL7;
 
 import javax.swing.*;
-class MyClass{
+class MyClass3{
 // Статическое поле класса:
 static int N1;
 // Нестатическое поле:
 int N2;
 // Конструктор класса:
-MyClass(int n1,int n2){
+MyClass3(int n1,int n2){
 N1=n1;
 N2=n2;
 // Текст для отображения в окне:
@@ -28,14 +28,14 @@ JOptionPane.showMessageDialog(null,text);}
 class UsingStatDemo{
 public static void main(String[] args){
 // Создание объекта:
-MyClass A=new MyClass(10,200);
+MyClass3 A=new MyClass3(10,200);
 // Изменение значения статического поля
 // (использована ссылка на класс):
-MyClass.N1=-50;
+MyClass3.N1=-50;
 // Отображение полей объекта:
 A.show();
 // Создание нового объекта:
-MyClass B=new MyClass(1,2);
+MyClass3 B=new MyClass3(1,2);
 // Отображение полей первого объекта:
 A.show();
 // Изменение статического поля
